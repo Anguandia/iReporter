@@ -1,0 +1,19 @@
+#update{
+    display: none;
+}
+
+#update input{
+    margin: 1% 2%;
+}
+
+#stats{
+    background: purple;
+    margin-left: 4% 1%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+#section3 p{
+    color: green;
+    text-align: center;
+}

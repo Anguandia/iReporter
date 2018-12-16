@@ -1,0 +1,41 @@
+td{
+    padding-left: 1%;
+}
+table{
+    width: 98%;
+    margin: 1% auto;
+    border: none;
+    background: rgb(247, 239, 245);
+}
+table, td{
+    border-collapse: collapse;
+}
+.c, .a, .d{
+    width: 18%
+}
+.set{
+    font-style: italic;
+    font-size: 18px;
+    background: grey;
+    height: 30px;
+}
+.b td, .d td{
+    color: blue;
+}
+tr{
+    border-bottom: solid 1px;
+}
+#new_dest{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+th{
+    padding: 1%;
+    background: navy;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+  }
