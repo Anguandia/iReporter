@@ -44,8 +44,8 @@ document.write('<head>\
     </tr>\
     <tr>\
         <td>Coordinates:</td>\
-        <td>E31.25468, N03.36658</td>\
-        <td></td>\
+        <td id="long">E31.25468</td>\
+        <td id="lat">N03.36658</td>\
         <td></td>\
     </tr>\
     <tr>\
@@ -83,7 +83,7 @@ document.write('<head>\
     </tr>\
     <tr>\
         <td>Phone:</td>\
-        <td>00552145</td>\
+        <td id="num">00552145</td>\
         <td>Email:</td>\
         <td>reporter@mail.com</td>\
     </tr>\
