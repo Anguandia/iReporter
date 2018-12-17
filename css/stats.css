@@ -8,7 +8,6 @@
     background: indigo;
     color: white;
     z-index: 10;
-    position: static;
 }
 
 .record{
@@ -27,4 +26,15 @@
 
 #rejected span{
     color: red;
+}
+
+aside{
+    position: relative;
+    z-index: 0;
+    height: auto
+}
+
+#map{
+    z-index: 20;
+    position: absolute;
 }

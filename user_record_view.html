@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/media.css">
-        <link rel="stylesheet" href="css/update.css">
+        <link rel="stylesheet" href="css/delete.css">
     </head>
     <body>
         <!--provide acontainer for the body
@@ -45,9 +45,9 @@
                 <article>
                     <script src="js/user_menu.js"></script>
                     <div id="section3">
-                        <button id="stats" onclick="delete()">Delete Record</button>
+                        <button id="edit" onclick="deleteRecord()">Delete Record</button>
                     <script src="js/delete.js"></script>
-                    <script src="js/confirm.js"></script>
+                    <script src="js/confirmdel.js"></script>
 
                     </div>
 
@@ -55,7 +55,7 @@
                     <script src="js/filter.js"></script>
                     <script src="js/sort.js"></script>
                 </article>
-                <aside>
+                <aside id="map">
                     <div id="map"></div>
                     <div id="photo"></div>
                     <div id="video"></div>
@@ -65,5 +65,7 @@
                 <p class="right"><em>@iRepot 2018</em></p>
             </footer>
         </div>
-    </body>
+        <script id="sub" type="text/javascript" src=js/map.js></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
 </html>
