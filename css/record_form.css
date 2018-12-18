@@ -1,0 +1,38 @@
+#record input{
+    border: none;
+}
+#record{
+    padding: 1%;
+}
+.address{
+    margin: .2%;
+    padding: .1%;
+}
+label{
+    width: 10%;
+}
+input{
+    width: 30%;
+}
+#submit{
+    background: rgb(3, 158, 3);
+    color: white;
+    padding: 1%;
+}
+#reset{
+    background: rgb(248, 191, 85);
+    color: white;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+legend{
+    font-style: italic;
+    color: navy;
+}
+.short{
+    width: 10.5%;
+}
+.description{
+    color: blue;
+    margin: 2% auto;
+}
