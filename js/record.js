@@ -4,21 +4,22 @@ document.write('<head>\
 <script>src="js/jquery.min.js"</script>\
 </head>\
 <body>\
-<form id="record" form-action="">\
+<form id="record" form-action="" onclick=showFlag()>\
     <fieldset>\
     <legend>Record Specifications</legend>\
-    <label for="type" class="">Record Type:</label>\
-    <input type="text" name="type" class="short" ><br>\
-    <label for="title" class="">Record Title:</label>\
-    <input type="text" name="title" class="short" ><br>\
-    <label for="anon" class="">Report Anonymously</label>\
-    <input type="checkbox" id="anon" class="short">\
-    <em class="description">If you opt to report anonymously, your identity will be conceled</em>\
+    <label for="rec" class="type left">Intervention:</label>\
+    <input type="radio" name="type" id="rec" class="type left short" >\
+    <label for="red" class="type left">Red Flag:</label>\
+    <input type="radio" name="type" id="red" class="type left short" >\
+    <input type="text" name="title" class="short, right" >\
+    <label for="title" class="anon right">Title:</label><br>\
+    <label for="anon" class="anon">Report Anonymously</label>\
+    <input type="checkbox" class="anon">\
+    <em class="description anon">If you opt to report anonymously, your identity will <span><b>NOT</b></span> be conceled</em>\
     </fieldset><br>\
     <label for="gps" class="">Enter GPS location of Pickup Point</label>\
     <input placeholder="degrees North" name="gps" class="short" id="gps_E">\
     <input placeholder="degrees East" name="gps" class="short" id="gps_N">\
-    <p>Fill location details below</p>\
     <fieldset>\
     <legend>Icident Location</legend>\
     <label for="dest1" class="left">Address1:</label>\
@@ -48,29 +49,33 @@ document.write('<head>\
     <label for="last_name"  class="right">Last Name:</label><br>\
     <label for="email"  class="left">Email addr:</label>\
     <input type="email" placeholder="email" class="left" name="email" id="email">\
-    <input type="number" placeholder="phone number" class="right" name="number" id="number">\
+    <input type="number" placeholder="phone number" class="right" name="number" id="number" required>\
     <label for="number"  class="right">Tel contact:</label><br>\
     </fieldset><br>\
     <fieldset id="flag">\
     <legend>Parties Involved</legend>\
     <em class="description">Parties can be persons, institutions or groups</em><br>\
     <label for="name" class="left">Name:</label>\
-    <input type="text" name="name" id="involved" class="left" placeholder="name" style="border: none">\
+    <input type="text" id="involved" class="left" placeholder="name of party" required>\
     <input type="text" placeholder="Position" class="right" name="position" id="pos">\
     <label for="pos"  class="right">Position<br><em>(if person)</em>:</label><br>\
-    <label for="email"  class="left">Home addr:</label>\
+    <label for="address"  class="left">Address:</label>\
     <input type="text" placeholder="Address" class="left" name="address" id="add"><br>\
     <button id="parites" onclick="addParty()">Add Party</button>\
-    </fieldset><br>\
-    <label for="description" class="">Icident Description:<p><em>\
-        Click the button bellow and give further details if possible\
+    </fieldset>\
+    <label for="description" class=""><p><em class="description">Click the button bellow and give further details if possible\
         </em></p>\
-    </label><br>\
-    <div id="textarea"></div>\
-    <button oncloick="openDetail()">Enter Report Description</button><br>\
-    <textarea rows="5" columns="200"class="" name="description" id="description" form="record" style="display:none">Enter record details</textarea><br>\
-    <input type="file" id="upload" value="upoad"> <em class="description">upload any pictures, videos or supporting document copies</em><br><br>\
+    </label>\
+    <button oncloick="openDetail()">Details</button><br>\
+    <textarea class="" id="desc" form="record" placeholder="Enter record details" ></textarea><br>\
+    <label><em class="description">upload any pictures, videos or supporting document copies</em><br><br>\
+    <input type="file" id="upload" value="upoad" form="record"></label>\
+    <div id="actions">\
     <input type="reset" id="reset" class="right" value="reset">\
-    <input type="submit" id="submit" class="left" value="submit">\
+    <input type="button" id="submit" class="left" value="submit" onclick=submitted()>\
+    </div>\
 </form>\
+<script src="js/show_flag.js"></script>\
+<script src="js/record_details.js"></script>\
+<script src="js/submitted.js"></script>\
 </body>')

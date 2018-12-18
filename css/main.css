@@ -1,12 +1,12 @@
 body{
-    height: 100vh;
+    height: 100%;
     margin: 0%;
+    background-image: url('background.jpg')
 }
 
 #page_wrap{
+    height: 100%;
     margin: 0;
-    padding: 0%;
-    position: absolute;
 }
 
 header{
@@ -101,8 +101,7 @@ footer{
 
 article{
     width: 65%;
-    height: calc(90% - 60px);
-    background: #f5d3f5;
+    background: rgb(235, 163, 235);
     float: left;
     margin: 0%;
 }
