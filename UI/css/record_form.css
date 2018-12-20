@@ -1,0 +1,74 @@
+#record{
+    padding: 1%;
+    line-height: 1.2;
+    background: rgb(236, 203, 236)
+}
+
+#record input{
+    margin: 1px 5px;
+    text-indent: 2%;
+    border: none;
+}
+
+#record #submit{
+    background: rgb(3, 158, 3);
+    color: white;
+    padding: 1%;
+}
+
+#reset{
+    background: rgb(248, 191, 85);
+    color: red;
+    padding: 1%;
+}
+
+legend{
+    font-style: italic;
+    color: navy;
+}
+/*general styling for instructional text*/
+.description{
+    color: blue;
+}
+/*hide fields for only red-flags by default*/
+#flag{
+    display: none;
+}
+/*use container to position submit and reset buttons*/
+#actions{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+/*size textarea for additional detail input*/
+#details{
+    width: 60%;
+    display: none
+}
+
+.check{
+    margin-right: 2%;
+}
+/*Container for aligning form input fields with different lengths*/
+.align{
+    display: table;
+}
+/*Group individual label/input-field pair as rows in alignment container*/
+.align p{
+    display: table-row;
+}
+/*display label and name as cells*/
+.align input, .align label{
+    display: table-cell;
+}
+/*style the upload and record detail buttons*/
+.but{
+    padding: .5% 1%;
+    background: indigo;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+/*style the input labels*/
+label{
+    font-family: monospace
+}
