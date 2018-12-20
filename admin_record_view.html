@@ -33,18 +33,12 @@
                 <div id='logo'><span><b>iReporter</b></span><span><em> Make it known</em></span></div>
             </header>
             <nav id="nav">
-                <a href="signup" class="" id='first'>Signup</a>
-                <a href="login" class="">Login</a>
-                <a href="incidences" class="" id="">Report</a>
-
-                <form action=''>
-                    <input type="text" id="srch" placeholder="search">
-                    <button type="submit" id="submit" >Go</button>
-                </form>
+                <script src="js/nav.js"></script>
             </nav>
                 <article>
                     <script src="js/admin_menu.js"></script>
                     <div id="section3">
+<<<<<<< HEAD
                         <button id="edit" onclick="updateStatus()">Update Status</button>
                     <div id="update">
                         <input type="radio" id="draft" name="draft" >
@@ -54,12 +48,21 @@
                         <input type="radio" id="rejected" name="draft" >
                         <label for="stat1">Rejected</label>
                         <input type="submit" value="Update" onclick="done()">
+=======
+                        <button id="stats" onclick="updateStatus()">Update Status</button>
+                        <div id="update">
+                            <input type="radio" id="draft" name="draft" >
+                            <label for="stat2">Draft</label>
+                            <input type="radio" id="resolved" name="draft" >
+                            <label for="stat3">Resolved</label>
+                            <input type="radio" id="rejected" name="draft" >
+                            <label for="stat1">Rejected</label>
+                            <input type="submit" value="Update" onclick="done()">
+                        </div>
+                        <script src="js/update.js"></script>
+                        <script src="js/confirm.js"></script>
+>>>>>>> 162689311-ft-update-and-detail-view
                     </div>
-                    <script src="js/update.js"></script>
-                    <script src="js/confirm.js"></script>
-
-                    </div>
-
                     <script src="js/record_view.js"></script>
                     <script src="js/filter.js"></script>
                     <script src="js/sort.js"></script>
