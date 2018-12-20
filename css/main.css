@@ -1,7 +1,7 @@
 body{
     height: 100%;
     margin: 0%;
-    background-image: url('background.jpg')
+    background-image: url('Desert.jpg')
 }
 
 #page_wrap{
@@ -101,7 +101,8 @@ footer{
 
 article{
     width: 65%;
-    background: rgb(235, 163, 235);
+    height: calc(90% - 60px);
+    /*background: rgb(235, 163, 235);*/
     float: left;
     margin: 0%;
 }
@@ -111,7 +112,7 @@ aside{
     height: calc(90% - 60px);
     float: right;
     background: lightblue;
-    position: relative;
+    margin: 0%;
 }
 
 #sub{
