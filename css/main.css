@@ -1,7 +1,7 @@
 body{
     height: 100%;
     margin: 0%;
-    background-image: url("Desert.jpg");
+    background-image: url("../Desert.jpg");
 }
 
 #page_wrap{
@@ -153,5 +153,5 @@ aside{
 }
 
 aside #image{
-    content: url("Desert.jpg")
+    content: url("../background.jpg")
 }

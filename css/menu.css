@@ -19,7 +19,7 @@
     color: blue;
     text-decoration: none;
     border: solid 1.4px rgb(238, 164, 238);
-    display: block
+    border-bottom: solid 1.4px rgb(247, 0, 255);
 }
 
 /*Tab styles for highlighting*/

@@ -39,3 +39,6 @@ th{
 tr:nth-child(even) {
     background-color: lightgray;
   }
+#section2{
+    background: rgb(247, 239, 245);
+}

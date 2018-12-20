@@ -1,4 +1,5 @@
 document.write('\
+<div id="recc">\
 <input type="text" name="record" id="recordID" onkeyup="filterData(3)" placeholder="enter record ID to search">\
 <tab id="select"><a href="admin_record_view.html">Select</a></tab>\
 <table id="all_records">\
@@ -99,4 +100,5 @@ document.write('\
   <td onclick="loadrecord()">18070630001</td>\
 </tr>\
 </table>\
+</div>\
 ')
