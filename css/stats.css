@@ -1,19 +1,14 @@
 #stats{
-    margin: 0%;
-    display: inline-block;
     text-align: center;
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background: indigo;
-    color: white;
-    z-index: 10;
+    background: violet;
+    color: viloet;
 }
 
 .record{
-    display: inline;
+    display: inline-block;
     text-align: center;
-    margin: 5%;
+    margin: 2%;
 }
 
 #resolved span{
