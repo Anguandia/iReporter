@@ -2,7 +2,7 @@ document.write("<head>\
 <link rel='stylesheet' href='css/stats.css'>\
 </head>\
 <body>\
-<div id='stats' style='position: absolute; z-index:10'>\
+<div id='stats'>\
 <div class='record' id='resolved'>\
     Resolved: <span> 00 </span>\
 </div>\
