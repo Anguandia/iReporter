@@ -1,7 +1,7 @@
 body{
     height: 100%;
     margin: 0%;
-    background-image: url('Desert.jpg')
+    background-image: url("Desert.jpg");
 }
 
 #page_wrap{
@@ -56,7 +56,7 @@ nav a:hover{
 
 nav a.active{
     background: violet;
-    border-bottom: solid 1px violet;
+    /*border-bottom: solid 1px violet;*/
     color: red;
 }
 
@@ -86,10 +86,10 @@ nav form #submit{
 }
 
 ection{
-    background: rgb(199, 169, 199);
+    /*background: rgb(199, 169, 199);
     height: calc(82% - 60px);
     border: none;
-    margin-bottom: -1.1%;
+    margin-bottom: -1.1%;*/
 }
 
 footer{
@@ -113,6 +113,7 @@ aside{
     float: right;
     background: lightblue;
     margin: 0%;
+    position: relative;
 }
 
 #sub{
@@ -149,4 +150,8 @@ aside{
 
 .left{
     float: left
+}
+
+aside #image{
+    content: url("Desert.jpg")
 }

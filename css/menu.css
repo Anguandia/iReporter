@@ -5,13 +5,9 @@
     border-bottom: solid 0.1px rgb(247, 0, 255);
     padding: 1% 2% 0%;
     min-width:100%;
-    background: linear-gradient(to left, violet, rgb(238, 164, 238));
-    margin-bottom: 1%;
+    background: rgb(238, 164, 238);
 }
 
-#bar p{
-    margin-left: 3%
-}
 /*Styles for search/sort tabs*/
 #bar tab a{
     padding-bottom: 1.2%;
@@ -21,16 +17,17 @@
     text-align: center;
     margin: 1% .6% 0% .6%;
     color: blue;
-    border: 1.4px;
     text-decoration: none;
+    border: solid 1.4px rgb(238, 164, 238);
+    display: block
 }
 
 /*Tab styles for highlighting*/
 #bar tab a:hover{
     color: white;
     border: solid 1.4px rgb(247, 0, 255);
-    border-bottom: solid 1.4px rgb(235, 163, 235);
-    background: rgb(235, 163, 235);
+    /*border-bottom: solid 1.4px rgb(235, 163, 235);*/
+    background: violet;
 }
 
 #bar tab a.active{
@@ -40,15 +37,6 @@
 /*look of elements modified to blend in with setup of this page*/
 #notifications{
     background: linear-gradient(to left, rgb(204, 100, 204), rgb(238, 164, 238));
-}
-
-#body{
-    border-top: none;
-}
-
-article{
-    padding: 0%;
-    background: rgb(235, 163, 235);
 }
 
 /*search keyword input field*/
