@@ -91,6 +91,9 @@
     article #table_container, article #all_records{
         overflow: scroll;
     }
+    #signup-wrapper{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:230px){
@@ -100,24 +103,21 @@
     article #bar tab a{
         display: block;
     }
-    #signup-wrapper{
-        width: 100%;
-    }
     #signup-form{
-        border-radius: 0%;
+        border-radius: 0px;
     }
     #signup-form #one, #signup-form #two{
         float: none;
         width: 100%;
     }
     #signup-form .one, #signup-form .two{
-        width: 90%;
-        margin: .8% auto;
+        width: 180%;
+        margin: .8% 10%;
         border: none;
     }
     #signup-form label{
         float: none;
-        margin: auto;
+        margin-left: 20%;
     }
     #signup-form input{
         float: none;
