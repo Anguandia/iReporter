@@ -15,9 +15,9 @@
             <script src="js/menu_icon.js"></script>
             <script src="js/header.js"></script>
             <script src="js/nav.js"></script>
-            <article style="width: 100%">
+            <article>
                 <div id="signup-wrapper">
-                    <form id="signup-form" form-action="">
+                    <form id="signup-form" action="/action_page.php" onubmit="submit()">
                         <div class="left" id="one">
                             <label for="first-name">First name:<span style='color:red'>*</span></label><br>
                             <input type="text" name="first-name" class="one" placeholder="Enter your first name " required><br>
@@ -35,10 +35,12 @@
                             <input type="password" name="pwd" class="two" placeholder="Repeat password" required><br>
                         </div>
                         <div class="clear"></div><br>
-                        <input type="submit" id="submit" value="submit" onsubmit="submit()"><br>
+                        <input type="submit" id="submit" value="submit"><br>
                     </form>
                 </div>
             </article>
+            <aside>
+            </aside>
             <script src="js/footer.js"></script>
         </div>
             <script src="js/submit.js"></script>
