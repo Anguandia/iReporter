@@ -30,18 +30,17 @@
                             <label for="last-name">Last name:<span style='color:red' >*</span></label><br>
                             <input type="text" class="two" placeholder="Enter your last name" required><br>
                             <label for="email">Email:<span style='color:red'>*</span></label><br>
-                            <input type="email" class="two" placeholder="Enter email"><br>
+                            <input type="email" class="two" placeholder="Enter email" required><br>
                             <label for="pwd">Password:<span style='color:red'>*</span></label><br>
                             <input type="password" name="pwd" class="two" placeholder="Repeat password" required><br>
                         </div>
                         <div class="clear"></div><br>
-                        <input type="submit" id="submit" value="submit"><br>
-                        <sub>By clicking "submit", you agree to the
-                        <span><a class="tabs" href="T&C's"><em> Terms and Conitions</em></a></span> of SendIT</sub>
+                        <input type="submit" id="submit" value="submit" onsubmit="submit()"><br>
                     </form>
                 </div>
             </article>
             <script src="js/footer.js"></script>
         </div>
+            <script src="js/submit.js"></script>
     </body>
 </html>

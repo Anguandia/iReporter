@@ -34,10 +34,8 @@
 #two label{
     margin-left: 3.333%;
 }
-sub a{
-    color: white;
-}
-#submit{
+
+#signup-form #submit{
     width: 93.333%;
     background: navy;
     color: white;
@@ -46,16 +44,7 @@ sub a{
     line-height: 160%;
     border-radius: 10px;
 }
-sub{
-    margin-left: 15%;
-    text-align: center;
-}
-#signup-form p{
-    text-align: center;
-    margin-top: 2%;
-}
 
 #signup-form label{
     color: navy;
-    font-weight: bold;
 }
