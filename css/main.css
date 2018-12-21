@@ -96,7 +96,8 @@ footer{
     height: 12%;
     width: 100%;
     background: rgb(47, 0, 47);
-    margin: 0;
+    margin-bottom: 0;
+    position: absolute;
 }
 
 article{
