@@ -12,54 +12,27 @@
         <!--provide acontainer for the body
         elements-->
         <div id="page-wrap">
-            <div id='iconcontainer'>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-            </div>
-            <header>
-                <div id='logo'><span><b>iReporter</b></span><span><em> Make it known</em></span></div>
-            </header>
-            <nav id="nav">
-                <a href="signup" class="" id='first'>Signup</a>
-                <a href="login" class="">Login</a>
-                <a href="incidences" class="" id="">Report</a>
-
-                <form action=''>
-                    <input type="text" id="srch" placeholder="search">
-                    <button type="submit" id="submit" >Go</button>
-                </form>
-            </nav>
-            <article>
+            <script src="js/menu_icon.js"></script>
+            <script src="js/header.js"></script>
+            <script src="js/nav.js"></script>
+            <article style="width: 100%">
                 <div id="signup-wrapper">
                     <form id="signup-form" form-action="">
                         <div class="left" id="one">
                             <label for="first-name">First name:<span style='color:red'>*</span></label><br>
-                            <input type="text" name="first-name" class="one" placeholder="Enter your first name "><br>
+                            <input type="text" name="first-name" class="one" placeholder="Enter your first name " required><br>
                             <label for="alias">Display name:</label><br>
                             <input type="text" class="one" placeholder="Enter preffered display name"><br>
-                            <label for="pwd">Password:<span style='color:red'>*</span></label><br>
-                            <input type="password" name="pwd" class="one" placeholder="Enter password"><br>
+                            <label for="pwd">Password:<span style='color:red' required>*</span></label><br>
+                            <input type="password" name="pwd" class="one" placeholder="Enter password" required><br>
                         </div>
                         <div class="right" id="two">
-                            <label for="last-name">Last name:<span style='color:red'>*</span></label><br>
-                            <input type="text" class="two" placeholder="Enter your last name"><br>
+                            <label for="last-name">Last name:<span style='color:red' >*</span></label><br>
+                            <input type="text" class="two" placeholder="Enter your last name" required><br>
                             <label for="email">Email:<span style='color:red'>*</span></label><br>
                             <input type="email" class="two" placeholder="Enter email"><br>
                             <label for="pwd">Password:<span style='color:red'>*</span></label><br>
-                            <input type="password" name="pwd" class="two" placeholder="Repeat password"><br>
+                            <input type="password" name="pwd" class="two" placeholder="Repeat password" required><br>
                         </div>
                         <div class="clear"></div><br>
                         <input type="submit" id="submit" value="submit"><br>
@@ -68,12 +41,7 @@
                     </form>
                 </div>
             </article>
-            <aside>
-            </aside>
-            <div style='clear: both'></div>
-            <footer>
-            <p class="right"><em>@iRepot 2018</em></p>
-            </footer>
+            <script src="js/footer.js"></script>
         </div>
     </body>
 </html>
