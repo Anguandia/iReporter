@@ -1,5 +1,5 @@
 function updated(){
-    if(document.getElementById('resolved').checked=='true'){
+    if(document.getElementById('resolved').checked==true){
         document.getElementById('status').innerHTML='resolved';
         document.getElementById('status').style.color='green';
     }else{
