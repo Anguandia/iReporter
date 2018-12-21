@@ -35,7 +35,7 @@ document.write('<head>\
     </tr>\
     <tr>\
         <td>Record Status:</td>\
-        <td>Draft</td>\
+        <td id="status">Draft</td>\
         <td></td>\
         <td></td>\
     </tr>\
