@@ -1,0 +1,68 @@
+/**style sheet for search and sort table data*/
+* {
+    box-sizing: border-box;
+  }
+  /*input box sizeand styling*/
+  #recordID {
+    padding: .5%;
+    border: 1px solid;
+    margin: 1.5% 1.2% 2%;
+    border-radius: 6px;
+  }
+  /*button for reversing sorting/searching order*/
+  #reverse{
+    margin: 1%;
+  }
+  /*styles for actual table*/
+  #all_records {
+    border-collapse: collapse;
+    width: 98%;
+    font-size: 14px;
+    margin: auto;
+  }
+
+  td {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+  }
+  td a{
+    text-decoration: none;
+  }
+  th {
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    background: navy;
+    color: white;
+    border: none;
+  }
+
+  #all_records tr.header {/*check usefulness*/
+    padding: 0.5%;
+  }
+  #all_records tr:hover{
+    background: rgb(200, 134, 216);
+    cursor: pointer;
+  }
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
+
+  #select{
+    text-decoration: none;
+    background: grey;
+    padding: .5%;
+  }
+  #select a{
+    text-decoration: none;
+    color: white;
+  }
+  #sort_instruction{
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1%
+  }
+  #recc{
+    background: rgb(243, 209, 243)
+  }

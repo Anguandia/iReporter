@@ -1,0 +1,57 @@
+#record input{
+    border: none;
+}
+#record{
+    padding: 1%;
+    line-height: 1.2;
+}
+.address{
+    margin: .2%;
+    padding: .1%;
+}
+label{
+    width: 10%;
+}
+#record input{
+    width: 30%;
+    margin: .2px 0;
+    text-indent: 2%;
+}
+#record #submit{
+    background: rgb(3, 158, 3);
+    color: white;
+    padding: 1%;
+}
+#reset{
+    background: rgb(248, 191, 85);
+    color: white;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+legend{
+    font-style: italic;
+    color: navy;
+}
+.short{
+    width: 10.5%;
+}
+.description{
+    color: blue;
+}
+#flag{
+    display: none;
+
+}
+.type{
+    margin-right: -20%;
+}
+#actions{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+#desc{
+    width: 300px;
+}
+.anon{
+    margin-right: -10%
+}

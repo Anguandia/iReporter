@@ -1,0 +1,35 @@
+#stats{
+    text-align: center;
+    width: 100%;
+    background: violet;
+    color: viloet;
+}
+
+.record{
+    display: inline-block;
+    text-align: center;
+    margin: 2%;
+}
+
+#resolved span{
+    color: green;
+}
+
+#draft span{
+    color: orange;
+}
+
+#rejected span{
+    color: red;
+}
+
+aside{
+    position: relative;
+    z-index: 0;
+    height: auto
+}
+
+#map{
+    z-index: 20;
+    position: absolute;
+}

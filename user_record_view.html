@@ -1,0 +1,78 @@
+<!--DOCTYPE html-->
+<html lang="en">
+    <head>
+        <title>iReporter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/delete.css">
+        <link rel="stylesheet" href="css/update.css">
+    </head>
+    <body>
+        <!--provide acontainer for the body
+        elements-->
+        <div id="page-wrap">
+            <div id='iconcontainer'>
+                <div class='iconrow'>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                </div>
+                <div class='iconrow'>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                </div>
+                <div class='iconrow'>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                    <div class='icondot'></div>
+                </div>
+            </div>
+            <header>
+                <div id='logo'><span><b>iReporter</b></span><span><em> Make it known</em></span></div>
+            </header>
+            <nav id="nav">
+                <a href="signup" class="" id='first'>Signup</a>
+                <a href="login" class="">Login</a>
+                <a href="incidences" class="" id="">Report</a>
+
+                <form action=''>
+                    <input type="text" id="srch" placeholder="search">
+                    <button type="submit" id="submit" >Go</button>
+                </form>
+            </nav>
+                <article>
+                    <script src="js/user_menu.js"></script>
+                    <div id="section3">
+                        <button id="edit" onclick="deleteRecord()">Delete Record</button>
+                        <button id="stats" onclick="editNum()">Edit Contact</button>
+                        <button id="stats" onclick="addLoc()">Add Location</button>
+                    <script src="js/delete.js"></script>
+                    <script src="js/edit_num.js"></script>
+                    <script src="js/confirmdel.js"></script>
+                    <script src="js/confirm_num.js"></script>
+                    <script src="js/confirm_loc.js"></script>
+                    <script src="js/loc_added.js"></script>
+
+                    </div>
+
+                    <script src="js/record_view.js"></script>
+                    <script src="js/filter.js"></script>
+                    <script src="js/sort.js"></script>
+                </article>
+                <aside id="map">
+                    <div id="map"></div>
+                    <div id="photo"></div>
+                    <div id="video"></div>
+                </aside>
+                <div style='clear: both'></div>
+            <footer>
+                <p class="right"><em>@iRepot 2018</em></p>
+            </footer>
+        </div>
+        <script id="sub" type="text/javascript" src=js/map.js></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+</html>
