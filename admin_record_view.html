@@ -12,58 +12,33 @@
         <!--provide acontainer for the body
         elements-->
         <div id="page-wrap">
-            <div id='iconcontainer'>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-                <div class='iconrow'>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                    <div class='icondot'></div>
-                </div>
-            </div>
-            <header>
-                <div id='logo'><span><b>iReporter</b></span><span><em> Make it known</em></span></div>
-            </header>
-            <nav id="nav">
-                <script src="js/nav.js"></script>
-            </nav>
-                <article>
-                    <script src="js/admin_menu.js"></script>
-                    <div id="section3">
-                        <button id="stats" onclick="updateStatus()">Update Status</button>
-                        <div id="update">
-                            <input type="radio" id="draft" name="draft" >
-                            <label for="stat2">Draft</label>
-                            <input type="radio" id="resolved" name="draft" >
-                            <label for="stat3">Resolved</label>
-                            <input type="radio" id="rejected" name="draft" >
-                            <label for="stat1">Rejected</label>
-                            <input type="submit" value="Update" onclick="done()">
-                        </div>
-                        <script src="js/update.js"></script>
-                        <script src="js/confirm.js"></script>
+            <script src="js/menu_icon.js"></script>
+            <script src="js/header.js"></script>
+            <script src="js/nav.js"></script>
+            <article>
+                <script src="js/admin_menu.js"></script>
+                <div id="section3">
+                    <button id="stats" onclick="updateStatus()">Update Status</button>
+                    <div id="update">
+                        <input type="radio" id="draft" name="draft" >
+                        <label for="stat2">Draft</label>
+                        <input type="radio" id="resolved" name="draft" >
+                        <label for="stat3">Resolved</label>
+                        <input type="radio" id="rejected" name="draft" >
+                        <label for="stat1">Rejected</label>
+                        <input type="submit" value="Update" onclick="done()">
                     </div>
-                    <script src="js/record_view.js"></script>
-                    <script src="js/filter.js"></script>
-                    <script src="js/sort.js"></script>
-                </article>
-                <aside>
-                    <div id="map"></div>
-                    <div id="photo"></div>
-                    <div id="video"></div>
-                </aside>
-                <div style='clear: both'></div>
-            <footer>
-                <p class="right"><em>@iRepot 2018</em></p>
-            </footer>
+                    <script src="js/update.js"></script>
+                    <script src="js/confirm.js"></script>
+                </div>
+                <script src="js/record_view.js"></script>
+                <script src="js/filter.js"></script>
+                <script src="js/sort.js"></script>
+            </article>
+            <aside id="map">
+            </aside>
+            <div style='clear: both'></div>
+            <script src="js/footer.js"></script>
         </div>
     </body>
 </html>
