@@ -1,0 +1,103 @@
+@media screen and (max-width: 700px){
+    nav a{
+        display: inline-block;
+        float: none;
+        width: 23%;
+        margin: auto;
+    }
+
+    nav form{
+        display: block;
+        width: 60%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    nav form #srch, nav form #submit{
+        font-size: 100%;
+        margin-bottom: 3%
+    }
+
+    nav #first{
+        margin: auto;
+    }
+
+    nav{
+        height: auto;
+    }
+    article #signup-wrapper{
+        width: 90%;
+    }
+    article #bar{
+        background: none;
+    }
+    article #bar tab a{
+        border: none;
+    }
+    article #bar tab a:hover{
+        border: none;
+    }
+    body #stats{
+        background: none;
+        color: gold;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #logo{
+        font-size: 140%;
+    }
+
+    #logo span em{
+        display: none;
+    }
+    nav{
+        padding: 1%;
+    }
+    nav a{
+        display: none
+    }
+
+    nav form{
+        width: 98%;
+        margin: 2%;
+    }
+
+    nav form #submit, nav form #srch{
+        width: 100%;
+        display: block;
+        margin: 1px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #stats .record{
+        display: block;
+        text-align: left;
+    }
+    article, aside{
+        float: none;
+        width: 100%;
+    }
+
+    #iconcontainer{
+        display: block;
+    }
+    article #table_container, article #all_records{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:230px){
+    nav{
+        display: none;
+    }
+    article #bar tab a{
+        display: block;
+    }
+}
