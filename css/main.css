@@ -2,6 +2,8 @@ body{
     height: 100%;
     margin: 0%;
     background-image: url("../Desert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 #page_wrap{
@@ -85,40 +87,28 @@ nav form #submit{
     position: static;
 }
 
-ection{
-    /*background: rgb(199, 169, 199);
-    height: calc(82% - 60px);
-    border: none;
-    margin-bottom: -1.1%;*/
-}
-
 footer{
     height: 12%;
     width: 100%;
     background: rgb(47, 0, 47);
-    margin-bottom: 0;
-    position: absolute;
+    margin: 0%;
+    position: relative;
 }
 
 article{
     width: 65%;
     height: calc(90% - 60px);
-    /*background: rgb(235, 163, 235);*/
     float: left;
     margin: 0%;
+    z-index: 1;
 }
 
 aside{
     width: 35%;
     height: calc(90% - 60px);
     float: right;
-    background: lightblue;
     margin: 0%;
-    position: relative;
-}
-
-#sub{
-    z-index: -1;
+    position: relative
 }
 
 #iconcontainer{
@@ -154,5 +144,12 @@ aside{
 }
 
 aside #image{
-    content: url("../background.jpg")
+    content: url("../background.jpg");
+    max-width: 100%;
+    z-index: -1;
+}
+
+map{
+    width: 100%;
+    height: 100%
 }

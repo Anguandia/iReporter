@@ -64,5 +64,6 @@
     margin: 1%
   }
   #recc{
-    background: rgb(243, 209, 243)
+    background: rgb(243, 209, 243);
+    min-width: fit-content;
   }
