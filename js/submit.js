@@ -1,7 +1,7 @@
 function submit(){
-    document.getElementsByTagName('article').innerHTML='You have successfully signedup please login and explore';
+    document.getElementById('signup-wrapper').innerHTML='You have successfully signedup please login and explore';
     setTimeout(
         function login(){
-            document.getElementsByTagName('article').innerHTML='login.html';
+            document.getElementById('signup-wrapper').innerHTML='login.html';
         }, 3000);
 }
