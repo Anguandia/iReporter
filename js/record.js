@@ -7,75 +7,70 @@ document.write('<head>\
 <form id="record" form-action="" onclick=showFlag()>\
     <fieldset>\
     <legend>Record Specifications</legend>\
-    <label for="rec" class="type left">Intervention:</label>\
-    <input type="radio" name="type" id="rec" class="type left short" >\
-    <label for="red" class="type left">Red Flag:</label>\
-    <input type="radio" name="type" id="red" class="type left short" >\
-    <input type="text" name="title" class="short, right" >\
-    <label for="title" class="anon right">Title:</label><br>\
-    <label for="anon" class="anon">Report Anonymously</label>\
-    <input type="checkbox" class="anon">\
-    <em class="description anon">If you opt to report anonymously, your identity will <span><b>NOT</b></span> be conceled</em>\
+    <label class="check">Red-flag:\
+    <input type="radio" class="check" name="type" id="red">\
+    </label>\
+    <label class="check">Other:\
+    <input type="radio" class="check" name="type" id="rec">\
+    </label><br>\
+    <label for="title">Subject:</label>\
+    <input type="text" name="title" class="short" placeholder="brief summary of event"><br>\
+    <label for="anon">Report Anonymously</label>\
+    <input type="checkbox" class="check" id="anon"><br>\
+    <em class="description">If you opt to report anonymously, your identity will <span><b>NOT</b></span> be exposeds</em>\
     </fieldset><br>\
-    <label for="gps" class="">Enter GPS location of Pickup Point</label>\
+    <label for="gps" class="">Enter GPS location of Pickup Point</label><br>\
     <input placeholder="degrees North" name="gps" class="short" id="gps_E">\
     <input placeholder="degrees East" name="gps" class="short" id="gps_N">\
     <fieldset>\
     <legend>Icident Location</legend>\
-    <label for="dest1" class="left">Address1:</label>\
-    <input type="text" name="dest1" id="src" class="left" placeholder="Country">\
-    <input type="text" placeholder="City" class="right" name="src2" id="src2">\
-    <label for="src2"  class="right">Address2:</label><br>\
-    <label for="src2"  class="left">Address3:</label>\
-    <input type="text" placeholder="County" class="left" name="src2" id="src2">\
-    <input type="text" placeholder="Division" class="right" name="src2" id="src2">\
-    <label for="src2"  class="right">Address4:</label><br>\
-    <label for="src2"  class="left">Address5:</label>\
-    <input type="text" placeholder="Village" class="left" name="src2" id="src2">\
-    <input type="text" placeholder="Street" class="right" name="src2" id="src2">\
-    <label for="src2"  class="right">Address6:</label><br>\
-    <label for="src2"  class="left">Address7:</label>\
-    <input type="text" placeholder="Block" class="left" name="src2" id="src2">\
-    <input type="text" placeholder="Floor" class="right" name="src2" id="src2">\
-    <label for="src2"  class="right">Address8:</label>\
+    <label for="dest1" class="">Address1:</label>\
+    <input type="text" placeholder="City" class="" name="src2" id="src2"><br>\
+    <label for="src2"  class="">Address2:</label>\
+    <input type="text" name="dest1" id="src" class="" placeholder="County"><br>\
+    <label for="src2"  class="">Address3:</label>\
+    <input type="text" placeholder="street" class="" name="src2" id="src2"><br>\
     </fieldset>\
-    \
     <fieldset>\
-    <legend>Your Details</legend>\
+    <legend>Reporter Details</legend>\
     <em class="description">Details are for followup purposes. Your choice of anonymity holds</em><br>\
-    <label for="first_name" class="left">First Name:</label>\
-    <input type="text" name="first_name" id="recipient" class="left" placeholder="first name" style="brecord: none">\
-    <input type="text" placeholder="last name" class="right" name="last_name" id="recipient1">\
-    <label for="last_name"  class="right">Last Name:</label><br>\
-    <label for="email"  class="left">Email addr:</label>\
-    <input type="email" placeholder="email" class="left" name="email" id="email">\
-    <input type="number" placeholder="phone number" class="right" name="number" id="number" required>\
-    <label for="number"  class="right">Tel contact:</label><br>\
-    </fieldset><br>\
+    <div class="align">\
+    <p><label for="name" class="">Name:</label>\
+    <input type="text" name="name" id="" class="" placeholder="name" required></p>\
+    <p><label for="email"  class="">Email:</label>\
+    <input type="email" placeholder="email" class="" name="email" id="email"></p>\
+    <p><label for="number"  class="">Tel:</label>\
+    <input type="tel" placeholder="phone number" class="" name="number" id="number" required></p>\
+    </div>\
+    </fieldset>\
     <fieldset id="flag">\
     <legend>Parties Involved</legend>\
     <em class="description">Parties can be persons, institutions or groups</em><br>\
-    <label for="name" class="left">Name:</label>\
-    <input type="text" id="involved" class="left" placeholder="name of party" required>\
-    <input type="text" placeholder="Position" class="right" name="position" id="pos">\
-    <label for="pos"  class="right">Position<br><em>(if person)</em>:</label><br>\
-    <label for="address"  class="left">Address:</label>\
-    <input type="text" placeholder="Address" class="left" name="address" id="add"><br>\
-    <button id="parites" onclick="addParty()">Add Party</button>\
+    <div class="align">\
+    <p><label for="name" class="">Name:</label>\
+    <input type="text" id="involved" class="" placeholder="name of party" required></p>\
+    <p><label for="pos"  class="">Position<em>(if person)</em>:</label>\
+    <input type="text" placeholder="Position" class="" name="position" id="pos"></p>\
+    <p><label for="address"  class="">Address:</label>\
+    <input type="text" placeholder="Address" class="" name="address" id="add"></p>\
+    </div><br>\
+    <button id="parites" class="but" onclick="addParty()">Add Party</button>\
     </fieldset>\
-    <label for="description" class=""><p><em class="description">Click the button bellow and give further details if possible\
-        </em></p>\
-    </label>\
-    <button oncloick="openDetail()">Details</button><br>\
-    <textarea class="" id="desc" form="record" placeholder="Enter record details" ></textarea><br>\
-    <label><em class="description">upload any pictures, videos or supporting document copies</em><br><br>\
-    <input type="file" id="upload" value="upoad" form="record"></label>\
+    <p><em class="description">Click the button bellow to add further details</em></p>\
+    <button id="get" class="but" onclick="openDetails()">Details</button>\
+    <textarea class="" id="details" form="record" placeholder="Enter record details" ></textarea><br>\
+    <p>\
+    <em class="description">Upload any pictures, videos or supporting document copies</em>\
+    </p>\
+    <button class="but" onclick="getFile()">Upload</button>\
+    <input type="file" id="upload" form="record" accept="audio/*, video/*, image/*" hidden>\
     <div id="actions">\
-    <input type="reset" id="reset" class="right" value="reset">\
-    <input type="button" id="submit" class="left" value="submit" onclick=submitted()>\
+    <input type="button" id="submit" class="" value="submit" onclick=submitted()>\
+    <input type="reset" id="reset" class="" value="reset">\
     </div>\
 </form>\
 <script src="js/show_flag.js"></script>\
 <script src="js/record_details.js"></script>\
 <script src="js/submitted.js"></script>\
+<script src="js/getfile.js"></script>\
 </body>')
