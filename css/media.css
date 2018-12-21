@@ -100,4 +100,29 @@
     article #bar tab a{
         display: block;
     }
+    #signup-wrapper{
+        width: 100%;
+    }
+    #signup-form{
+        border-radius: 0%;
+    }
+    #signup-form #one, #signup-form #two{
+        float: none;
+        width: 100%;
+    }
+    #signup-form .one, #signup-form .two{
+        width: 90%;
+        margin: .8% auto;
+        border: none;
+    }
+    #signup-form label{
+        float: none;
+        margin: auto;
+    }
+    #signup-form input{
+        float: none;
+        margin: .8% auto;
+        border: none;
+        border-radius: none;
+    }
 }
