@@ -1,0 +1,33 @@
+#change_pwd{
+    margin-left: 1%;
+    padding: 1%;
+    background: purple;
+}
+
+#signup-wrapper{
+    width: 50%;
+    margin: 15% auto;
+    display: none;
+}
+#signup-form{
+    background: purple;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#signup-form input{
+    width: 100%;
+    margin: 1% auto;
+    border-radius: 10px;
+    text-indent: 2%;
+    line-height: 150%;
+}
+
+#signup-wrapper #submit{
+    width: 100%;
+    background: navy;
+    color: white;
+    line-height: 160%;
+    border-radius: 10px;
+    margin-top: 3%;
+}
