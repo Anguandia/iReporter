@@ -77,7 +77,7 @@ The entire page has a background image that shall be upgraded to animated images
    > ##### *Scope*
    >
    >Full login experience simulation is incorporated, providing action feedback for selection of login type and even a virtual login and redirect into a typical profile page of the user-type \'logged-in\'.
-   >> Validation is built into the page but the experienced had to be sacrificed for the simulation of successful login and access to subsequent pages. An understanding of this trade-off can be understood by looking at a summary of the technical [implementation summary](#technical-implementation-summary)
+   >> Validation is built into the page but the experienced had to be sacrificed for the simulation of successful login and access to subsequent pages. An understanding of this trade-off can be understood by looking at a summary of the technical [implementation summary](#technologies-used)
    >> The current version however falls short of providing a password reset link and alternative login methods, ommitions from project planning
    >
    > ##### *Prospects*
@@ -89,7 +89,7 @@ The entire page has a background image that shall be upgraded to animated images
    >
    > - The test user should navigate to the signup page from the signup menu item in the navigation bar on the [home page](#home-page)
    > - Test user should then hover over the submit button; a hover menu for user type-selection will be displayed on hover
-   > - Select a type of user from the hover menu by ***only*** hovering and clicking on the type of choice. A hover menu will not respond to tab and enter keys, see [technical details](#technical-implementation-summary) for an understanding of this apparent anomaly
+   > - Select a type of user from the hover menu by ***only*** hovering and clicking on the type of choice. A hover menu will not respond to tab and enter keys, see [technical details](#technologies-used) for an understanding of this apparent anomaly
    
  #### USER PROFILE
  
