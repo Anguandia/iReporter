@@ -9,10 +9,6 @@
     margin: 1.5% 1.2% 2%;
     border-radius: 6px;
   }
-  /*button for reversing sorting/searching order*/
-  #reverse{
-    margin: 1%;
-  }
   /*styles for actual table*/
   #all_records {
     border-collapse: collapse;
@@ -65,5 +61,5 @@
   }
   #recc{
     background: rgb(243, 209, 243);
-    min-width: fit-content;
+    /*min-width: fit-content;*/
   }

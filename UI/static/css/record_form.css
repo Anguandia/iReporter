@@ -1,7 +1,8 @@
 #record{
     padding: 1%;
     line-height: 1.2;
-    background: rgb(236, 203, 236)
+    background: rgb(236, 203, 236);
+    margin-bottom: 0%
 }
 
 #record input{

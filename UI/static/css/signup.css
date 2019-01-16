@@ -1,6 +1,13 @@
-#signup-wrapper{
-    width: 60%;
-    margin: 15% auto;
+article{
+    width: 100%;
+    min-height: calc(100% - 200px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#signup-wrap{
+    width: 50%;
 }
 #signup-form{
     width: 100%;
@@ -35,7 +42,7 @@
     margin-left: 3.333%;
 }
 
-#signup-form #submit{
+#signup-form #submitSignup{
     width: 93.333%;
     background: navy;
     color: white;
@@ -46,5 +53,9 @@
 }
 
 #signup-form label{
-    color: navy;
+    color: white;
+}
+
+input{
+    border: none
 }

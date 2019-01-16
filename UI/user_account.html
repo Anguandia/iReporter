@@ -4,41 +4,58 @@
         <title>iReporter</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../static/css/main.css">
-        <link rel="stylesheet" href="../static/css/media.css">
-        <link rel="stylesheet" href="../static/css/new_pwd.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/media.css">
+        <link rel="stylesheet" href="static/css/new_pwd.css">
+        <link rel="stylesheet" href="static/css/update.css">
     </head>
     <body>
         <!--provide acontainer for the body
         elements-->
         <div id="page-wrap">
-            <script src="../static/js/menu_icon.js"></script>
-            <script src="../static/js/header.js"></script>
-            <script src="../static/js/nav.js"></script>
+            <script src="static/js/menu_icon.js"></script>
+            <script src="static/js/header.js"></script>
+            <script src="static/js/nav.js"></script>
             <article>
-                <script src="../static/js/user_menu.js"></script>
-                <button id="change_pwd" onclick="changePassword()">Change Password</button>
-                <div id="signup-wrapper">
-                    <form id="signup-form" form-action="/action_page.php">
+                <script src="static/js/user_menu.js"></script>
+                <div id="section4">
+                <button id="change_pwd" class="edit" onclick="changePassword()">Change Password</button>
+                <button id="change_name" class="edit" onclick="changeName()">Change Userame</button>
+                <button id="change_pic" class="edit" onclick="changePic()">Change Profie Picture</button>
+                </div>
+                <div id="new_alue" class="signup-wrapper">
+                    <div class="signup-form" form-action="/action_page.php">
+                        <label  for="newName">New Username:</label><br>
+                        <input type="text" placeholder="Enter new Username">
+                    </div>
+                </div>
+                <div class="signup-wrapper" id="signup-wrapper">
+                    <form class="signup-form" form-action="/action_page.php">
                         <label  for="old">Old Password:<span style='color:red'>*</span></label><br>
-                        <input type="password" value="old" placeholder="current password"><br>
+                        <input type="password" placeholder="current password" required><br>
                         <label  for="new1">New Password:<span style='color:red'>*</span></label><br>
-                        <input type="password" value="new1" placeholder="new password"><br>
+                        <input type="password" placeholder="new password" required><br>
                         <label  for="new2">Repeat Password:<span style='color:red'>*</span></label><br>
-                        <input type="password" name="pwd" value="new2" placeholder="Repeat password"><br>
-                        <input type="submit" id="submit" class="two" value="submit"><br>
+                        <input type="password" name="pwd" placeholder="Repeat password" required><br>
+                        <input type="submit" id="submitPass" class="two" value="submit"><br>
                     </form>
                 </div>
             </article>
-            <aside id="map">
-                <div id="pics"></div>
+            <aside>
+                <div id="pics"><img src="static/images/koala.jpg" alt="Profile Picture" width="224" height="192"></div>
+                <div id="prof">
+                <p>Userame: <span  id="useName"><b><em>Anguandia</em></b></span></p>
+                <p>Email: <span><b><em>anguandia@abc.com</em></b></span></p>
+                <p>Tel: <span id="telNo"><b><em>07123456789</em></b></span></p>
+                </div>
             </aside>
             <div style="clear: both"></div>
-            <script src="../static/js/footer.js"></script>
+            <script src="static/js/footer.js"></script>
         </div>
-        <script type="text/javascript" src=../static/js/change_pwd.js></script>
-        <script id="sub" type="text/javascript" src=../static/js/map.js></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        <script type="text/javascript" src="static/js/change_pwd.js"></script>
+        <script type="text/javascript" src="static/js/change_name.js"></script>
+        <script type="text/javascript" src="static/js/confirm_name.js"></script>
+        <script type="text/javascript" src="static/js/load.js"></script>
     </body>
 </html>
 *

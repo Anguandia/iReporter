@@ -4,36 +4,39 @@
         <title>iReporter</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../static/css/main.css">
-        <link rel="stylesheet" href="../static/css/media.css">
-        <link rel="stylesheet" href="../static/css/delete.css">
-        <link rel="stylesheet" href="../static/css/update.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/media.css">
+        <link rel="stylesheet" href="static/css/delete.css">
+        <link rel="stylesheet" href="static/css/update.css">
     </head>
     <body>
         <!--provide acontainer for the body
         elements-->
         <div id="page-wrap">
-            <script src="../static/js/menu_icon.js"></script>
-            <script src="../static/js/header.js"></script>
-            <script src="../static/js/nav.js"></script>
+            <script src="static/js/menu_icon.js"></script>
+            <script src="static/js/header.js"></script>
+            <script src="static/js/nav.js"></script>
                 <article>
-                    <script src="../static/js/user_menu.js"></script>
+                    <script src="static/js/user_menu.js"></script>
                     <div id="section3">
-                        <button id="edit" onclick="deleteRecord()">Delete Record</button>
-                        <button id="stats" onclick="editNum()">Edit Contact</button>
-                        <button id="stats" onclick="addLoc()">Add Location</button>
-                    <script src="../static/js/delete.js"></script>
-                    <script src="../static/js/edit_num.js"></script>
-                    <script src="../static/js/confirmdel.js"></script>
-                    <script src="../static/js/confirm_num.js"></script>
-                    <script src="../static/js/confirm_loc.js"></script>
-                    <script src="../static/js/loc_added.js"></script>
+                        <button id="delete" class="edit" onclick="deleteRecord()">Delete Record</button>
+                      <button id="editNum" class="edit" onclick="editNum()">Edit Contact</button>
+                        <button id="addLoc" class="edit" onclick="addLoc()">Add Location</button>
+                        <button id="editDetail" class="edit" onclick="editComment()">Edit Comment</button>
+                    <script src="static/js/confirmComment.js"></script>
+                    <script src="static/js/delete.js"></script>
+                    <script src="static/js/edit_num.js"></script>
+                    <script src="static/js/editComment.js"></script>
+                    <script src="static/js/confirmdel.js"></script>
+                    <script src="static/js/confirm_num.js"></script>
+                    <script src="static/js/confirm_loc.js"></script>
+                    <script src="static/js/loc_added.js"></script>
 
                     </div>
 
-                    <script src="../static/js/record_view.js"></script>
-                    <script src="../static/js/filter.js"></script>
-                    <script src="../static/js/sort.js"></script>
+                    <script src="static/js/record_view.js"></script>
+                    <script src="static/js/filter.js"></script>
+                    <script src="static/js/sort.js"></script>
                 </article>
                 <aside id="map">
                     <div id="map"></div>
@@ -41,11 +44,9 @@
                     <div id="video"></div>
                 </aside>
                 <div style='clear: both'></div>
-            <footer>
-                <p class="right"><em>@iRepot 2018</em></p>
-            </footer>
+            <script src="static/js/footer.js"></script>
         </div>
-        <script id="sub" type="text/javascript" src=../static/js/map.js></script>
+        <script id="sub" type="text/javascript" src=static/js/map.js></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>

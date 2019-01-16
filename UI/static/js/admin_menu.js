@@ -1,5 +1,5 @@
 document.write('<head>\
-<link rel="stylesheet" href="../static/css/menu.css">\
+<link rel="stylesheet" href="static/css/menu.css">\
 </head>\
 <body>\
 <div class="right" id="bar">\

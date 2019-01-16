@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
     nav a{
         display: inline-block;
         float: none;
@@ -25,8 +25,8 @@
     nav{
         height: auto;
     }
-    article #signup-wrapper{
-        width: 90%;
+    article #signup-wrap, article #login-wrapper{
+        width: 75%;
     }
     article #bar{
         background: none;
@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
     header{
         text-align: center;
         padding: 10px;
@@ -66,6 +66,14 @@
     nav form{
         width: 98%;
         margin: 2%;
+    }
+
+    article #signup-wrap, article #login-wrapper{
+        width: 95%;
+    }
+
+    article #signup-wrap label, article #login-wrapper label{
+        display: none;
     }
 
     nav form #submit, nav form #srch{
@@ -96,7 +104,7 @@
     }
 }
 
-@media screen and (max-width:230px){
+@media screen and (max-width:320px){
     nav{
         display: none;
     }
@@ -124,5 +132,9 @@
         margin: .8% auto;
         border: none;
         border-radius: none;
+    }
+    footer{
+        position: absolute;
+        bottom: 0%
     }
 }

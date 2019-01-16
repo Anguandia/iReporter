@@ -8,14 +8,15 @@
 .record{
     display: inline-block;
     text-align: center;
-    margin: 2%;
+    margin: 2% 4%;
+    font-family: cursive
 }
 
 #resolved span{
     color: green;
 }
 
-#draft span{
+#investigation span{
     color: orange;
 }
 
@@ -23,13 +24,6 @@
     color: red;
 }
 
-aside{
-    position: relative;
-    z-index: 0;
-    height: auto
-}
-
-#map{
-    z-index: 20;
-    position: absolute;
+#draft span{
+    color: blue;
 }

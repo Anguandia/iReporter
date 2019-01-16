@@ -1,7 +1,7 @@
 document.write('<head>\
-<link rel="stylesheet" href="../static/css/record_form.css"></link>\
-<link rel="stylesheet" href="../static/css/main.css"></link>\
-<script>src="../static/js/jquery.min.js"</script>\
+<link rel="stylesheet" href="static/css/record_form.css"></link>\
+<link rel="stylesheet" href="static/css/main.css"></link>\
+<script>src="static/js/jquery.min.js"</script>\
 </head>\
 <body>\
 <form id="record" form-action="" onclick=showFlag()>\
@@ -10,16 +10,16 @@ document.write('<head>\
     <label class="check">Red-flag:\
     <input type="radio" class="check" name="type" id="red">\
     </label>\
-    <label class="check">Other:\
+    <label class="check">Intervention:\
     <input type="radio" class="check" name="type" id="rec">\
     </label><br>\
-    <label for="title">Subject:</label>\
+    <label for="title">Title:</label>\
     <input type="text" name="title" class="short" placeholder="brief summary of event"><br>\
     <label for="anon">Report Anonymously</label>\
     <input type="checkbox" class="check" id="anon"><br>\
     <em class="description">If you opt to report anonymously, your identity will <span><b>NOT</b></span> be exposeds</em>\
     </fieldset><br>\
-    <label for="gps" class="">Enter GPS location of Pickup Point</label><br>\
+    <label for="gps" class="">Enter GPS location of Incident Occurence</label><br>\
     <input placeholder="degrees North" name="gps" class="short" id="gps_E">\
     <input placeholder="degrees East" name="gps" class="short" id="gps_N">\
     <fieldset>\
@@ -56,7 +56,7 @@ document.write('<head>\
     </div><br>\
     <button id="parites" class="but" onclick="addParty()">Add Party</button>\
     </fieldset>\
-    <p><em class="description">Click the button bellow to add further details</em></p>\
+    <p id="addDetail"><em class="description">Click the button bellow to add further details</em></p>\
     <button id="get" class="but" onclick="openDetails()">Details</button>\
     <textarea class="" id="details" form="record" placeholder="Enter record details" ></textarea><br>\
     <p>\
@@ -69,8 +69,7 @@ document.write('<head>\
     <input type="reset" id="reset" class="" value="reset">\
     </div>\
 </form>\
-<script src="../static/js/show_flag.js"></script>\
-<script src="../static/js/record_details.js"></script>\
-<script src="../static/js/submitted.js"></script>\
-<script src="../static/js/getfile.js"></script>\
+<script src="static/js/show_flag.js"></script>\
+<script src="static/js/record_details.js"></script>\
+<script src="static/js/getfile.js"></script>\
 </body>')

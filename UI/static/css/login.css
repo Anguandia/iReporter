@@ -1,9 +1,13 @@
 article{
-    width: 100%
+    width: 100%;
+    min-height: calc(100% - 200px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 #login-wrapper{
     width: 40%;
-    margin: 13% auto;
 }
 
 #login{
@@ -22,8 +26,12 @@ article{
     border: none;
 }
 
-#login #submit{
+#login #submitLogin{
     background: navy;
     color: white;
     margin-top: 4.5%
+}
+
+label{
+    color: white
 }

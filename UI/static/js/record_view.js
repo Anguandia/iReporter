@@ -1,5 +1,5 @@
 document.write('<head>\
-<link rel="stylesheet" class="tabs" href="../static/css/record_view.css">\
+<link rel="stylesheet" class="tabs" href="static/css/record_view.css">\
 </head>\
 <body>\
 <div id="table_container"><table>\
@@ -87,10 +87,16 @@ document.write('<head>\
         <td>Email:</td>\
         <td>reporter@mail.com</td>\
     </tr>\
+    <tr class="set">\
+        <td colspan="4">Report Particulars</td>\
+    </tr>\
     <tr>\
-        <td colspan=2 onclick=details()>Click here for more details</td>\
-        <td></td>\
-        <td></td>\
+        <td>Title:</td>\
+        <td colspan=3>Theft f Medicines</td>\
+    </tr>\
+    <tr>\
+        <td>Comment:</td>\
+        <td colspan=3 id="comment">Patients charged for ARVs in Arua Hospital</td>\
     </tr>\
 </table></div>\
 ')
