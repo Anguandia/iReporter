@@ -1,0 +1,29 @@
+#stats{
+    text-align: center;
+    width: 100%;
+    background: violet;
+    color: viloet;
+}
+
+.record{
+    display: inline-block;
+    text-align: center;
+    margin: 2% 4%;
+    font-family: cursive
+}
+
+#resolved span{
+    color: green;
+}
+
+#investigation span{
+    color: orange;
+}
+
+#rejected span{
+    color: red;
+}
+
+#draft span{
+    color: blue;
+}

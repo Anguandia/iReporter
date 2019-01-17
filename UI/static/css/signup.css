@@ -1,0 +1,61 @@
+article{
+    width: 100%;
+    min-height: calc(100% - 200px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#signup-wrap{
+    width: 50%;
+}
+#signup-form{
+    width: 100%;
+    background: purple;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+#signup-form #one, #signup-form #two{
+    width: 50%;
+    padding-top: 3%;
+}
+.one{
+    width: 90%;
+    margin: 0.8% 6.667%;
+    line-height: 140%;
+    border-radius: 10px;
+    text-indent: 5%;
+    background: rgb(230, 157, 230)
+}
+.two{
+    width: 90%;
+    margin: 0.8% 3.333%;
+    border-radius: 10px;
+    line-height: 140%;
+    text-indent: 5%;
+    background: rgb(230, 157, 230)
+}
+#one label{
+    margin: auto 6.667%;
+}
+#two label{
+    margin-left: 3.333%;
+}
+
+#signup-form #submitSignup{
+    width: 93.333%;
+    background: navy;
+    color: white;
+    margin-left: 3.333%;
+    margin-top: 2%;
+    line-height: 160%;
+    border-radius: 10px;
+}
+
+#signup-form label{
+    color: white;
+}
+
+input{
+    border: none
+}

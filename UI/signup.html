@@ -1,0 +1,45 @@
+<!--DOCTYPE html-->
+<html lang="en">
+    <head>
+        <title>iReporter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/media.css">
+        <link rel="stylesheet" href="static/css/signup.css">
+    </head>
+    <body>
+        <!--provide acontainer for the body
+        elements-->
+        <div id="page-wrap">
+            <script src="static/js/menu_icon.js"></script>
+            <script src="static/js/header.js"></script>
+            <script src="static/js/nav.js"></script>
+            <article>
+                <div id="signup-wrap">
+                    <form id="signup-form" action="">
+                        <div class="left" id="one">
+                            <label for="first-name">First name:</label><br>
+                            <input type="text" name="first-name" class="one" placeholder="First name "><br>
+                            <label for="last-name">Last name:</label><span style='color:red'>*</span></label><br>
+                            <input type="text" class="one" placeholder="Last name" required><br>
+                            <label for="email">Email:<span style='color:red' required>*</span></label><br>
+                            <input type="email" name="pwd" class="one" placeholder="Email" required><br>
+                        </div>
+                        <div class="right" id="two">
+                            <label for="tel">Tel:</label><br>
+                            <input type="tel" class="two" placeholder="Phone number"><br>
+                            <label for="pwd1">Password:<span style='color:red'>*</span></label><br>
+                            <input type="password" class="two" placeholder="Password" required><br>
+                            <label for="pwd">Password:<span style='color:red'>*</span></label><br>
+                            <input type="password" name="pwd" class="two" placeholder="Repeat password" required><br>
+                        </div>
+                        <input type="submit" id="submitSignup" value="submit"><br>
+                    </form>
+                </div>
+            </article>
+            <div style='clear: both'></div>
+            <script src="static/js/footer.js"></script>
+        </div>
+    </body>
+</html>

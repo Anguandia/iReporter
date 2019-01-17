@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px){
+    nav a{
+        display: inline-block;
+        float: none;
+        width: 23%;
+        margin: auto;
+    }
+
+    nav form{
+        display: block;
+        width: 60%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    nav form #srch, nav form #submit{
+        font-size: 100%;
+        margin-bottom: 3%
+    }
+
+    nav #first{
+        margin: auto;
+    }
+
+    nav{
+        height: auto;
+    }
+    article #signup-wrap, article #login-wrapper{
+        width: 75%;
+    }
+    article #bar{
+        background: none;
+    }
+    article #bar tab a{
+        border: none;
+    }
+    article #bar tab a:hover{
+        border: none;
+    }
+    body #stats{
+        background: none;
+        color: gold;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #logo{
+        font-size: 140%;
+    }
+
+    #logo span em{
+        display: none;
+    }
+    nav{
+        padding: 1%;
+    }
+    nav a{
+        display: none
+    }
+
+    nav form{
+        width: 98%;
+        margin: 2%;
+    }
+
+    article #signup-wrap, article #login-wrapper{
+        width: 95%;
+    }
+
+    article #signup-wrap label, article #login-wrapper label{
+        display: none;
+    }
+
+    nav form #submit, nav form #srch{
+        width: 100%;
+        display: block;
+        margin: 1px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #stats .record{
+        display: block;
+        text-align: left;
+    }
+    article, aside{
+        float: none;
+        width: 100%;
+    }
+
+    #iconcontainer{
+        display: block;
+    }
+    article #table_container, article #all_records{
+        overflow: scroll;
+    }
+    #signup-wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px){
+    nav{
+        display: none;
+    }
+    article #bar tab a{
+        display: block;
+    }
+    #signup-form{
+        border-radius: 0px;
+    }
+    #signup-form #one, #signup-form #two{
+        float: none;
+        width: 100%;
+    }
+    #signup-form .one, #signup-form .two{
+        width: 180%;
+        margin: .8% 10%;
+        border: none;
+    }
+    #signup-form label{
+        float: none;
+        margin-left: 20%;
+    }
+    #signup-form input{
+        float: none;
+        margin: .8% auto;
+        border: none;
+        border-radius: none;
+    }
+    footer{
+        position: absolute;
+        bottom: 0%
+    }
+}
